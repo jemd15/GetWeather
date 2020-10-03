@@ -1,20 +1,23 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
+  <ion-header>
+    <ion-grid>
+      <br>
+      <ion-row>
+        <ion-button size="small">Buscar por ciudad</ion-button>
+        <ion-fab vertical="top" horizontal="end">
+          <ion-fab-button size="small">
+            <ion-icon name="locate"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+      </ion-row>
+    </ion-grid>
   </ion-header>
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <object type="image/svg+xml" data="../../assets/icon/01_sunny.svg" width="300" height="300"></object>
+    <h1 class="grades-text ion-no-margin">{{ temp + 'º' }}</h1>
+    <h2>{{ description }}</h2>
+    <p>{{date | date:'medium'}}</p>
+    
+    <p><ion-icon name="location"></ion-icon>{{ ' ' + location + ', ' + country }}</p>
   </div>
 </ion-content>
