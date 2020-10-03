@@ -1,0 +1,7 @@
+{
+  "name": "GetWeather",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
